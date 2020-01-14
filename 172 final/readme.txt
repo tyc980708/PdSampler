@@ -1,0 +1,9 @@
+1. For the synthesizer I used wave shaping synthesis and frequency modulation. It has a midi input abstraction in it so users can play it with midi. The user can change the quality of the sound by draw different wave shapes. The synthesizer can be modulated by changing the index of modulation and the ratio between modulation frequency and carrier frequency.
+
+2. I created an automatic percussion machine and a guitar chord machine using free samples from the Internet. By clicking the bangs under openpanel, users can change the samples to whatever they like. The top left number box can change the bpm of these two samplers. Reset button will change current looping position to the last grid so that the next time on/off button is clicked, the machine will start from beginning.
+
+3. I used the delay and flanger effect from assignment 4 and added a tremolo effect. The two delay patches are separated from each other, but the presets can set both patches.
+
+4. There are three different spatial patches. The spaceleft and spaceright stand for the extremely left/right channel with initiation. By clicking moving around, the sound will automatically moving horizontally. The moving indicator shows the current position of the sound. By dragging change position, users can change to the position they want that sound to be at.
+
+5. When the patch is opened, turn on the volume of the three spatial patches. Then, by clicking the biggest green play button, the piece I created will start playing. For the 3 sections, I used delay with feedback for the first section, pure delay for the second, and delay with flanger for the third. I manually turn on and off tremolo as well as control the degree of tremolo.

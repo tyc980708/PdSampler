@@ -1,0 +1,37 @@
+#N canvas 0 23 1680 1005 10;
+#X obj 65 361 cnv 100 600 180 empty empty drum 20 12 0 14 -4032 -258113
+0;
+#X obj 768 9 cnv 200 600 400 empty empty guitar_delay&flanger 20 12
+0 14 -257985 -258113 0;
+#X obj 768 7 delaypatch;
+#X obj 66 361 drum;
+#X obj 56 102 cnv 100 550 180 empty empty guitar 20 12 0 14 -258113
+-4032 0;
+#X obj 55 101 guitar;
+#X obj 156 312 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 13 576 cnv 100 200 150 empty empty tremolo 20 12 0 14 -159808
+-262144 0;
+#X obj 12 576 tremelo;
+#X obj 1411 25 spaceleft;
+#X obj 766 420 cnv 200 600 400 empty empty keyboard_delay&flanger 20
+12 0 14 -257985 -258113 0;
+#X obj 1423 435 spaceright;
+#X floatatom 60 19 5 0 0 0 - bpm -;
+#X obj 351 557 inst;
+#X obj 767 419 delayinst;
+#X obj 646 126 presentation;
+#X text 96 18 BPM;
+#X obj 83 765 space;
+#X text 173 311 start guitar and drum simutaneously;
+#X connect 2 0 9 0;
+#X connect 3 0 17 0;
+#X connect 5 0 8 0;
+#X connect 5 0 2 0;
+#X connect 6 0 3 1;
+#X connect 6 0 5 1;
+#X connect 8 0 17 0;
+#X connect 12 0 5 0;
+#X connect 12 0 3 0;
+#X connect 13 0 14 0;
+#X connect 14 0 11 0;
